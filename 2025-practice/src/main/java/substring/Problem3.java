@@ -1,7 +1,6 @@
 package main.java.substring;
 
 //3. Longest Substring Without Repeating Characters
-import java.util.HashSet;
 import java.util.LinkedHashSet;
 
 public class Problem3 {

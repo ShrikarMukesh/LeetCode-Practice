@@ -1,31 +1,7 @@
 package main.java.substring;
 
-public class Test {
+public class IndexOfExamples {
     public static void main(String[] args) {
-        String[] strs = {"flower","flow","flight"};
-        String res = longestCommonPrefix(strs);
-        System.out.println(res);
-        //
-        indexOfExamples();
-    }
-    public static String longestCommonPrefix(String[] strs) {
-        if (strs == null || strs.length == 0) return "";
-        String prefix = strs[0];
-        for (int i= 1;i<strs.length;i++){
-
-            while (strs[i].indexOf(prefix) != 0 ){
-                int str = strs[i].indexOf(prefix);
-                System.out.println(str);
-                prefix = prefix.substring(0, prefix.length() -1);
-                System.out.println(prefix);
-                if (prefix.isEmpty()) return "";
-            }
-        }
-        return prefix;
-
-    }
-
-    public static void indexOfExamples() {
         String text = "hello world, welcome to Java programming!";
 
         // 1. Find the index of the first occurrence of a character
@@ -50,5 +26,7 @@ public class Test {
 
         int index6 = text.indexOf("Python");
         System.out.println("Index of substring 'Python' (not found): " + index6);
+
     }
+
 }
